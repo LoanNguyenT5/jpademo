@@ -20,11 +20,12 @@ public class Main {
     static CategoryRepository categoryRepository = applicationContext.getBean("categoryRepository", CategoryRepository.class);
     public static void main(String[] args) {
 
-       // createNewBookEntityWithNewCategory();
-       //findAllUsingQuery();
+        System.out.println("hihi");
+        createNewBookEntityWithNewCategory();
+       findAllUsingQuery();
 
-        // Sample for FetchType.
-        findAllCategory();
+        // Sample foFetchType.
+      //  findAllCategory();
 
         // Sample for FetchType.LAZY
         //findAllBookFromCategory();
@@ -86,6 +87,7 @@ public class Main {
                System.out.println(book.toString());
            }
        }
+       //BookEntity book = bookRepo.
    }
    private static void findAllCategory(){
         List<CategoryEntity> categoryEntityList = (List<CategoryEntity>) categoryRepository.findAll();
